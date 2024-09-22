@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-int ptr=0,nm, pre=0;
+int ptr=0,nm, pre=0,i;
 
 int move(int choise)
 {
@@ -82,11 +82,21 @@ void instructions()
     printf("\n=");
     scanf("%d",&nm);
     clrscr();
-
 }
+
+void previous()
+{
+   printf("point=%d \n",pre);
+   printf("|''''''''''''''''''''''''''''|\n");
+   for(i=0; i<pre; i++)
+   {
+         pro();
+   }
+}
+
 int main()
 {
-    int i, ch;
+    int ch;
     char choise;
 
     instructions();
@@ -108,52 +118,27 @@ int main()
             {
             case 0:
                 clrscr();
-                printf("point=%d \n",pre);
-                printf("|''''''''''''''''''''''''''''|\n");
-                for(i=0; i<pre; i++)
-                {
-                    pro();
-                }
+                previous();
                 step0();
                 break;
             case 1:
                 clrscr();
-                printf("point=%d \n",pre);
-                printf("|''''''''''''''''''''''''''''|\n");
-                for(i=0; i<pre; i++)
-                {
-                    pro();
-                }
+                previous();
                 step1();
                 break;
             case 2:
                 clrscr();
-                printf("point=%d \n",pre);
-                printf("|''''''''''''''''''''''''''''|\n");
-                for(i=0; i<pre; i++)
-                {
-                    pro();
-                }
+                previous();
                 step2();
                 break;
             case 3:
                 clrscr();
-                printf("point=%d \n",pre);
-                printf("|''''''''''''''''''''''''''''|\n");
-                for(i=0; i<pre; i++)
-                {
-                    pro();
-                }
+                previous();
                 step3();
                 break;
             case 4:
                 clrscr();
-                printf("point=%d \n",pre);
-                printf("|''''''''''''''''''''''''''''|\n");
-                for(i=0; i<pre; i++)
-                {
-                    pro();
-                }
+                previous();
                 step4();
                 break;
             case 5:
