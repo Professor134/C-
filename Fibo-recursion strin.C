@@ -1,40 +1,22 @@
-#include <stdio.h>
-#include <conio.h>
-int top=-1;
-char s[20];
-int size=20;
-void push()
+#include<stdio.h>
+int fibo(int no)
 {
-    char n[20];
-    int i=0;
-    if(top == size -1)
-    {
-        printf("\nStack Full");
-    }
+    if(no==0)
+        return 0;
+    else if(no==1)
+        return 1;
     else
-    {
-        printf("\nEnter String (MAX 20):");
-        scanf("%s",n);
-        while(n[i] != NULL)
-        {
-            top++;
-            s[top]=n[i];
-            i++;
-        }
-    }
+        return(fibo(no-1)+fibo(no-2));
 }
-void show()
+
+void main()
 {
-    int i=top;
-    while(s[i] != NULL)
+    int i,term, val;
+    printf("enter num");
+    scanf("%d",&term);
+    for(i=0; i<term; i++)
     {
-        printf("%c",s[i]);
-        i--;
+        val=fibo(i);
+        printf("%d",val);
     }
-}
-int main()
-{
-    push();
-    show();
-    return 0;
 }
