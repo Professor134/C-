@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 int fibo(int no)
 {
     if(no==0)
