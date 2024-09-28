@@ -70,13 +70,13 @@ int insertFront(int ITEM)// Circular
         printf("\n Overflow");
     else
     {
-        if(R==-1)
+        if(F==-1)
             R=F=0;
         else
         {
             F=(F+MAX-1)%MAX;
         }
-        Q[R]=ITEM;
+        Q[F]=ITEM;
         printf("\n Item inserted");
     }
 }
