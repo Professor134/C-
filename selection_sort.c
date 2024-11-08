@@ -10,17 +10,17 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-    for(i=0; i<n; i++)
+    for(i=0; i<n; i++) // to set smallest number to starting of array
     {
          small=i;
-        for(j=i+1; j<n; j++)
-        {
-            if(a[j]<a[small])
+        for(j=i+1; j<n; j++) //this loop is use to find smallest number from array 
+        { 
+            if(a[j]<a[small]) 
             {
-                small=j;
+                small=j; //after nth iteration smallest value of array present in small
             }
         }
-        temp=a[i];
+        temp=a[i];  // small move to a[i]
         a[i]=a[small];
         a[small]=temp;
     }
