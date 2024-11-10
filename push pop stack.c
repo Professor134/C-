@@ -44,14 +44,27 @@ int pop()
     }    
 }
 
+int display()
+{
+    int i;
+    if(TOP>=0)
+    {
+        printf("\n stack=");
+        for(i=TOP;i>-1;i--)
+            printf("\n %d",STK[i]);
+    }
+    else
+        printf("\n stack is empty");
+}
+
 int main()
 {
-  push();
-  push();
-  push();
-  push();
-  push();
-  push();
-  pop();
-  pop();
+  push();display();
+  push();display();
+  push();display();
+  push();display();
+  push();display();
+  push();display();
+  pop();display();
+  pop();display();
 }
