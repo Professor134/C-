@@ -25,7 +25,7 @@
   {
      if(isfull())
      {
-        printf("stack is full");
+        printf("queue is full");
      }
      else
      {
@@ -43,7 +43,7 @@
   int delete()
   {
       if(isempty())
-         printf("stack is empty");
+         printf("queue is empty");
       else
       {
          ITEM=Q[F];
