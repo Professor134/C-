@@ -9,7 +9,7 @@ struct node
 struct node *R=NULL;
 struct node *F=NULL;
 
-void enqueue()
+void enqueue()  //Normal
 {
     int val;
     struct node *new;
@@ -31,7 +31,8 @@ void enqueue()
     printf("\n%d inserted\n",val);
 }
 
-void dequeue()
+
+void dequeue() //Normal
 {
     struct node *p;
     if(F == NULL)
@@ -51,10 +52,10 @@ void dequeue()
         free(p);
 
     }
-
 }
 
-void display() {
+void display() //Normal
+{
     struct node *t;
     t=F;
     printf("\n");
