@@ -26,7 +26,7 @@ void push()
 void show()
 {
     int i=top;
-    while(s[i] != NULL)
+    while(i != -1)
     {
         printf("%c",s[i]);
         i--;
@@ -35,6 +35,7 @@ void show()
 int main()
 {
     push();
+    show();
     show();
     return 0;
 }
